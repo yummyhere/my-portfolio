@@ -1,168 +1,133 @@
+Here is the fully upgraded portfolio HTML document. It incorporates your real contact links, resume details, fixes all icon errors, improves floating animations, and adds a professional about page with your image and skills.
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://thumbs.dreamstime.com/b/initial-letter-yf-logo-template-design-initial-letter-yf-logo-template-design-138103824.jpg">
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Yamna Fatima | Social Media Marketer & SEO Analyst</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
 </head>
-<body class="bg-slate-900 text-gray-200">
+<body>
+<div class="animated-bg">
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+    <div class="shape shape4"></div>
+</div>
+<nav>
+    <a href="#home" class="logo">Yamna</a>
+    <ul>
+        <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-  <!-- Header Section -->
-  <header class="bg-slate-900 border-b border-slate-800">
-
-    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
-
-      <!-- Logo -->
-      <div class="text-2xl font-bold text-blue-600">
-        YF
-      </div>
-
-      <!-- Navigation Menu -->
-      <nav class="space-x-6">
-        <a href="#" class="hover:text-blue-500">Home</a>
-        <a href="#about" class="hover:text-blue-500">About</a>
-        <a href="#projects" class="hover:text-blue-500">Projects</a>
-        <a href="#contact" class="hover:text-blue-500">Contact</a>
-      </nav>
-
-      <!-- Hire Me Button -->
-     <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-  Hire Me
-</button>
-
-
+<!-- Home Section -->
+<section id="home" style="position:relative; overflow:hidden;">
+    <div class="floating-icons">
+        <i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js"></i><i class="fab fa-react"></i>
+        <i class="fab fa-instagram"></i><i class="fab fa-linkedin-in"></i><i class="fab fa-whatsapp"></i><i class="fab fa-github"></i>
+        <i class="fab fa-tiktok"></i><i class="fas fa-palette"></i><i class="fab fa-twitter"></i><i class="fas fa-chart-line"></i>
+        <i class="fab fa-facebook-f"></i><i class="fab fa-telegram-plane"></i><i class="fas fa-database"></i>
     </div>
-  </header>
-
-  <!-- Main Content -->
-  <main class="max-w-7xl mx-auto p-6 text-center">
-
-    <!-- Welcome Heading -->
-<h1 class="text-blue-400 text-4xl font-bold">
-  Welcome to My Portfolio
-</h1>
-    <!-- About Me Section -->
-    <section id="about" class="my-12">
-      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-      <p class="max-w-2xl mx-auto mb-6">
-        Hi! I'm a passionate web developer and digital marketer who loves building clean,
-        responsive websites and growing brands online. Always learning, always leveling up 🚀
-      </p>
-      <img src="https://i.pinimg.com/736x/61/78/46/6178467ae990b505a8e50e1216b5b666.jpg" alt="My Image" class="mx-auto rounded-full">
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="my-12">
-      <h2 class="text-3xl font-semibold mb-8">My Projects</h2>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-        <!-- Project Card 1 -->
-        <div class="bg-slate-800 p-4 rounded-lg shadow hover:shadow-xl">
-          <img src="https://i.pinimg.com/1200x/30/1c/51/301c517611853bd3e8156e189e1ada63.jpg" alt="Project 1" class="mb-4 rounded">
-          <h3 class="text-xl font-bold">Project One</h3>
-          <p>A cool website built using HTML, CSS, and Tailwind.</p>
+    <div class="hero-content" style="text-align:center;">
+        <h2 class="glow">Hi, I'm <span>Yamna Fatima</span></h2>
+        <div class="dynamic-roles" id="roleContainer"></div>
+        <div class="social-circle">
+            <a href="https://wa.me/923232106763?text=Hi%20Yamna" target="_blank" class="circle-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/yamna-fatima-93529b36b" target="_blank" class="circle-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/anaya_zain.0" target="_blank" class="circle-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/yummyhere" target="_blank" class="circle-icon"><i class="fab fa-github"></i></a>
         </div>
-
-        <!-- Project Card 2 -->
-        <div class="bg-slate-800 p-4 rounded-lg shadow hover:shadow-xl">
-          <img src="https://i.pinimg.com/1200x/cc/dc/8e/ccdc8eb99b52cad8a14a8137931e02a6.jpg" alt="Project 2" class="mb-4 rounded">
-          <h3 class="text-xl font-bold">Project Two</h3>
-          <p>An SEO-optimized landing page for business growth.</p>
-        </div>
-
-        <!-- Project Card 3 -->
-        <div class="bg-slate-800 p-4 rounded-lg shadow hover:shadow-xl">
-          <img src="https://i.pinimg.com/736x/dd/10/19/dd1019d685939d9a8aa14c23d17d8cdf.jpg" alt="Project 3" class="mb-4 rounded">
-          <h3 class="text-xl font-bold">Project Three</h3>
-          <p>A responsive portfolio design with modern UI.</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section id="contact" class="my-12">
-      <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
-
-<form 
-  action="thankyou.html"
-  class="max-w-md mx-auto bg-slate-800 p-6 rounded-lg shadow-lg space-y-4"
->
-
-        <!-- Name Field -->
-        <input
-  type="text"
-  placeholder="Your Name"
-  class="w-full p-3 rounded bg-slate-900 text-gray-200 
-         border border-slate-700 
-         focus:outline-none focus:ring-2 focus:ring-blue-500"
->
-
-
-        <!-- Email Field -->
-        <input
-  type="email"
-  placeholder="Your Email"
-  class="w-full p-3 rounded bg-slate-900 text-gray-200 
-         border border-slate-700 
-         focus:outline-none focus:ring-2 focus:ring-blue-500"
->
-
-
-        <textarea
-  rows="4"
-  placeholder="Your Message"
-  class="w-full p-3 rounded bg-slate-900 text-gray-200 
-         border border-slate-700 
-         focus:outline-none focus:ring-2 focus:ring-blue-500"
-></textarea>
-
-
-        <!-- Submit Button -->
-        <button
-  type="submit"
-  class="w-full bg-blue-500 text-white py-3 rounded 
-         font-semibold hover:bg-blue-600 
-         transition"
->
-  Send Message 
-</button>
-
-
-      </form>
-    </section>
-
-  </main>
-
-  <!-- Footer Section -->
-  <footer class="bg-gray-900 text-white text-center p-6">
-
-    <!-- Social Media Links -->
-    <div class="space-x-6 mb-4">
-        <a href="#" class="text-blue-400 hover:text-blue-300">Facebook</a>
-        <a href="#" class="text-blue-400 hover:text-blue-300">Twitter</a>
-        <a href="#" class="text-blue-400 hover:text-blue-300">LinkedIn</a>
+        <a href="#projects" class="btn" style="margin-top:30px; display:inline-block;">Explore My Work</a>
     </div>
+</section>
 
-    <!-- Footer Navigation -->
-    <div class="space-x-6">
-      <a href="#" class="hover:text-blue-400">Home</a>
-      <a href="#about" class="hover:text-blue-400">About</a>
-      <a href="#projects" class="hover:text-blue-400">Projects</a>
-      <a href="#contact" class="hover:text-blue-400">Contact</a>
+<!-- About Section (enhanced with resume details) -->
+<section id="about" class="hidden">
+    <h2 class="title">About Me</h2>
+    <p style="line-height:1.7">Creative Social Media Marketer, SEO Analyst & Graphic Designer with hands-on experience in content strategy, audience engagement, and web development. Skilled in growing online presence, optimizing content, creating visually compelling designs, and managing multiple platforms using data-driven strategies.</p>
+    
+    <div class="about-details">
+        <div class="detail-card">
+            <h3><i class="fas fa-briefcase"></i> Experience</h3>
+            <ul>
+                <li><i class="fas fa-chart-line"></i> <strong>Aabtaab</strong> – Social Media Marketing (2025-Present)<br>Managed Facebook pages, content strategies, analytics.</li>
+                <li><i class="fas fa-chart-simple"></i> <strong>Techmire Solutions</strong> – Social Media & SEO<br>Created engaging content, managed interactions, campaign assistance.</li>
+                <li><i class="fas fa-laptop-code"></i> <strong>Techmire Solutions</strong> – Web Development Intern (In Progress)<br>HTML/CSS/JS, building layouts, testing.</li>
+            </ul>
+        </div>
+        <div class="detail-card">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <ul>
+                <li><i class="fas fa-school"></i> Intermediate (F.Sc) – Shaikh Zaid College (2025)</li>
+                <li><i class="fas fa-school"></i> Matriculation – The SET School (2023)</li>
+            </ul>
+        </div>
+        <div class="detail-card">
+            <h3><i class="fas fa-language"></i> Languages</h3>
+            <ul><li><i class="fas fa-comment"></i> English, Urdu, Sindhi</li></ul>
+        </div>
     </div>
+    <div class="about-buttons" style="margin-top:36px; display:flex; gap:20px; flex-wrap:wrap;">
+        <a href="cv.pdf" download class="btn">Download CV</a>
+        <button id="open-about-page" class="btn btn-outline">About Me →</button>
+    </div>
+</section>
 
-    <p class="mt-4 text-sm">© 2026 My Portfolio</p>
+<!-- Skills Section (with correct icons) -->
+<section id="skills" class="hidden">
+    <h2 class="title">Skills & Tools</h2>
+    <div class="skills-wrapper">
+        <div class="skill-group"><h3>Frontend</h3><div class="skill-grid"><div class="skill-logo" data-name="HTML5"><i class="fab fa-html5"></i></div><div class="skill-logo" data-name="CSS3"><i class="fab fa-css3-alt"></i></div><div class="skill-logo" data-name="JavaScript"><i class="fab fa-js"></i></div><div class="skill-logo" data-name="React"><i class="fab fa-react"></i></div></div></div>
+        <div class="skill-group"><h3>Graphic Design</h3><div class="skill-grid"><div class="skill-logo" data-name="Canva"><i class="fas fa-palette"></i></div><div class="skill-logo" data-name="Photoshop"><i class="fas fa-image"></i></div></div></div>
+        <div class="skill-group"><h3>Social Media Marketing</h3><div class="skill-grid"><div class="skill-logo" data-name="Instagram"><i class="fab fa-instagram"></i></div><div class="skill-logo" data-name="TikTok"><i class="fab fa-tiktok"></i></div><div class="skill-logo" data-name="LinkedIn"><i class="fab fa-linkedin"></i></div><div class="skill-logo" data-name="Facebook"><i class="fab fa-facebook-f"></i></div></div></div>
+        <div class="skill-group"><h3>Advertising</h3><div class="skill-grid"><div class="skill-logo" data-name="Meta Ads"><i class="fab fa-facebook"></i></div><div class="skill-logo" data-name="IG Ads"><i class="fab fa-instagram"></i></div><div class="skill-logo" data-name="Google Ads"><i class="fab fa-google"></i></div></div></div>
+    </div>
+</section>
 
-  </footer>
+<!-- Projects Section -->
+<section id="projects" class="hidden">
+    <h2 class="title">Recent Projects</h2>
+    <div class="projects">
+        <div class="project"><h3>📊 Viral Growth Campaign</h3><p>Instagram & TikTok engagement +250% via audience targeting & viral hooks.</p></div>
+        <div class="project"><h3>💻 Modern Business Landing Page</h3><p>Responsive high-conversion site with SEO & smooth animations.</p></div>
+        <div class="project"><h3>🔒 Security Assessment Lab</h3><p>Vulnerability scanning, Linux hardening on TryHackMe.</p></div>
+    </div>
+    <div style="text-align:center; margin-top:25px;"><button id="explore-projects-btn" class="btn">Explore More →</button></div>
+</section>
 
+<!-- Services Section -->
+<section id="services" class="hidden">
+    <h2 class="title">What I Offer</h2>
+    <div class="services-grid">
+        <div class="service-box"><i class="fas fa-palette"></i><h3>Graphic Designing</h3><p>Visual identity, social graphics, Canva & Photoshop masterpieces.</p></div>
+        <div class="service-box"><i class="fas fa-chart-line"></i><h3>Social Media Marketing</h3><p>Content strategy, growth hacking, community management.</p></div>
+        <div class="service-box"><i class="fas fa-laptop-code"></i><h3>Web Development</h3><p>Modern responsive sites, performance-first frontend.</p></div>
+        <div class="service-box"><i class="fas fa-bullhorn"></i><h3>Ads Campaigns</h3><p>Meta/Google Ads management, retargeting & ROAS optimization.</p></div>
+        <div class="service-box"><i class="fas fa-search"></i><h3>Search Engine Optimization</h3><p>On-page SEO, technical audits, keyword strategies.</p></div>
+        <div class="service-box"><i class="fas fa-tools"></i><h3>Site Maintenance</h3><p>Regular updates, speed optimization & security patches.</p></div>
+    </div>
+    <div style="text-align:center;"><button id="open-services-page" class="btn btn-outline">View All Services →</button></div>
+</section>
+
+<!-- Contact Section (professional upgrade) -->
+<section id="contact" class="contact hidden" style="text-align:center;">
+    <h2 class="title" style="margin-bottom:20px;">Let's Connect</h2>
+    <p style="margin:20px 0; color:#CBD5F0;">Available for freelance & collaborations — Let's bring ideas to life</p>
+    <div class="contact-icons">
+        <a href="mailto:yamnafatima.tms@gmail.com" class="icon"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/923232106763" target="_blank" class="icon"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/anaya_zain.0" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon"><i class="fab fa-telegram-plane"></i></a>
+        <a href="https://www.linkedin.com/in/yamna-fatima-93529b36b" target="_blank" class="icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/yummyhere" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+    </div>
+</section>
+<footer>© 2026 Yamna Fatima — Social Media Marketer & SEO Analyst. Crafted with precision.</footer>
+<script src="index.js"></script>
 </body>
 </html>
-
