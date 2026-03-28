@@ -1,133 +1,245 @@
-Here is the fully upgraded portfolio HTML document. It incorporates your real contact links, resume details, fixes all icon errors, improves floating animations, and adds a professional about page with your image and skills.
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Yamna Fatima | Social Media Marketer & SEO Analyst</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Yamna Fatima | Social Media Marketer & SEO Analyst</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="animated-bg">
-    <div class="shape shape1"></div>
-    <div class="shape shape2"></div>
-    <div class="shape shape3"></div>
-    <div class="shape shape4"></div>
-</div>
-<nav>
-    <a href="#home" class="logo">Yamna</a>
-    <ul>
-        <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li>
+
+<canvas id="bg-animation"></canvas>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home" class="logo">YF</a>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-</nav>
+  </nav>
 
-<!-- Home Section -->
-<section id="home" style="position:relative; overflow:hidden;">
-    <div class="floating-icons">
-        <i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js"></i><i class="fab fa-react"></i>
-        <i class="fab fa-instagram"></i><i class="fab fa-linkedin-in"></i><i class="fab fa-whatsapp"></i><i class="fab fa-github"></i>
-        <i class="fab fa-tiktok"></i><i class="fas fa-palette"></i><i class="fab fa-twitter"></i><i class="fas fa-chart-line"></i>
-        <i class="fab fa-facebook-f"></i><i class="fab fa-telegram-plane"></i><i class="fas fa-database"></i>
-    </div>
-    <div class="hero-content" style="text-align:center;">
-        <h2 class="glow">Hi, I'm <span>Yamna Fatima</span></h2>
-        <div class="dynamic-roles" id="roleContainer"></div>
-        <div class="social-circle">
-            <a href="https://wa.me/923232106763?text=Hi%20Yamna" target="_blank" class="circle-icon"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/in/yamna-fatima-93529b36b" target="_blank" class="circle-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/anaya_zain.0" target="_blank" class="circle-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/yummyhere" target="_blank" class="circle-icon"><i class="fab fa-github"></i></a>
+  <!-- Home Section -->
+  <section id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm <span>Yamna Fatima</span></h1>
+          <div class="dynamic-roles" id="roleContainer"></div>
+          <div class="social-circle">
+            <a href="https://wa.me/923232106763?text=Hi%20Yamna" target="_blank" class="circle-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/yamna-fatima-93529b36b" target="_blank" class="circle-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/anaya_zain.0" target="_blank" class="circle-icon instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/yummyhere" target="_blank" class="circle-icon github"><i class="fab fa-github"></i></a>
+          </div>
+          <a href="#projects" class="btn">Explore My Work</a>
         </div>
-        <a href="#projects" class="btn" style="margin-top:30px; display:inline-block;">Explore My Work</a>
+        <div class="hero-image">
+          <img src="https://placehold.co/400x400/1e1e2e/8B5CF6?text=YF" alt="Yamna Fatima" class="profile-img">
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- About Section (enhanced with resume details) -->
-<section id="about" class="hidden">
-    <h2 class="title">About Me</h2>
-    <p style="line-height:1.7">Creative Social Media Marketer, SEO Analyst & Graphic Designer with hands-on experience in content strategy, audience engagement, and web development. Skilled in growing online presence, optimizing content, creating visually compelling designs, and managing multiple platforms using data-driven strategies.</p>
-    
-    <div class="about-details">
-        <div class="detail-card">
-            <h3><i class="fas fa-briefcase"></i> Experience</h3>
-            <ul>
-                <li><i class="fas fa-chart-line"></i> <strong>Aabtaab</strong> – Social Media Marketing (2025-Present)<br>Managed Facebook pages, content strategies, analytics.</li>
-                <li><i class="fas fa-chart-simple"></i> <strong>Techmire Solutions</strong> – Social Media & SEO<br>Created engaging content, managed interactions, campaign assistance.</li>
-                <li><i class="fas fa-laptop-code"></i> <strong>Techmire Solutions</strong> – Web Development Intern (In Progress)<br>HTML/CSS/JS, building layouts, testing.</li>
-            </ul>
-        </div>
-        <div class="detail-card">
-            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-            <ul>
-                <li><i class="fas fa-school"></i> Intermediate (F.Sc) – Shaikh Zaid College (2025)</li>
-                <li><i class="fas fa-school"></i> Matriculation – The SET School (2023)</li>
-            </ul>
-        </div>
-        <div class="detail-card">
-            <h3><i class="fas fa-language"></i> Languages</h3>
-            <ul><li><i class="fas fa-comment"></i> English, Urdu, Sindhi</li></ul>
-        </div>
-    </div>
-    <div class="about-buttons" style="margin-top:36px; display:flex; gap:20px; flex-wrap:wrap;">
+  <!-- About Section with Toggle Details -->
+  <section id="about" class="slide-left">
+    <div class="container">
+      <h2 class="title">About <span>Me</span> </h2>
+      <p>Creative Social Media Marketer, SEO Analyst & Graphic Designer with hands-on experience in content strategy, audience engagement, and web development. Skilled in growing online presence, optimizing content, creating visually compelling designs, and managing multiple platforms using data-driven strategies.</p>
+      <div class="about-buttons">
         <a href="cv.pdf" download class="btn">Download CV</a>
-        <button id="open-about-page" class="btn btn-outline">About Me →</button>
+        <button id="toggle-about" class="btn btn-outline">Read More →</button>
+      </div>
+      <div id="about-details" class="about-details hidden">
+        <div class="detail-card">
+          <h3><i class="fas fa-briefcase"></i> Experience</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> <strong>Aabtaab</strong> – Social Media Marketing (2025–Present)</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Techmire Solutions</strong> – Social Media & SEO</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Techmire Solutions</strong> – Web Development Intern (In Progress)</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Intermediate (F.Sc) – Shaikh Zaid College (2025)</li>
+            <li><i class="fas fa-check-circle"></i> Matriculation – The SET School (2023)</li>
+          </ul>
+        </div>
+        <div class="detail-card">
+          <h3><i class="fas fa-language"></i> Languages</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> English (Fluent)</li>
+            <li><i class="fas fa-check-circle"></i> Urdu (Native)</li>
+            <li><i class="fas fa-check-circle"></i> Sindhi (Native)</li>
+          </ul>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Skills Section (with correct icons) -->
-<section id="skills" class="hidden">
-    <h2 class="title">Skills & Tools</h2>
-    <div class="skills-wrapper">
-        <div class="skill-group"><h3>Frontend</h3><div class="skill-grid"><div class="skill-logo" data-name="HTML5"><i class="fab fa-html5"></i></div><div class="skill-logo" data-name="CSS3"><i class="fab fa-css3-alt"></i></div><div class="skill-logo" data-name="JavaScript"><i class="fab fa-js"></i></div><div class="skill-logo" data-name="React"><i class="fab fa-react"></i></div></div></div>
-        <div class="skill-group"><h3>Graphic Design</h3><div class="skill-grid"><div class="skill-logo" data-name="Canva"><i class="fas fa-palette"></i></div><div class="skill-logo" data-name="Photoshop"><i class="fas fa-image"></i></div></div></div>
-        <div class="skill-group"><h3>Social Media Marketing</h3><div class="skill-grid"><div class="skill-logo" data-name="Instagram"><i class="fab fa-instagram"></i></div><div class="skill-logo" data-name="TikTok"><i class="fab fa-tiktok"></i></div><div class="skill-logo" data-name="LinkedIn"><i class="fab fa-linkedin"></i></div><div class="skill-logo" data-name="Facebook"><i class="fab fa-facebook-f"></i></div></div></div>
-        <div class="skill-group"><h3>Advertising</h3><div class="skill-grid"><div class="skill-logo" data-name="Meta Ads"><i class="fab fa-facebook"></i></div><div class="skill-logo" data-name="IG Ads"><i class="fab fa-instagram"></i></div><div class="skill-logo" data-name="Google Ads"><i class="fab fa-google"></i></div></div></div>
+  <!-- Skills Section -->
+  <section id="skills" class="slide-right">
+    <div class="container">
+      <h2 class="title">Skills <span>& Tools</span></h2>
+      <div class="skills-wrapper">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="skill-grid">
+            <div class="skill-logo" data-name="HTML5"><i class="fab fa-html5"></i></div>
+            <div class="skill-logo" data-name="CSS3"><i class="fab fa-css3-alt"></i></div>
+            <div class="skill-logo" data-name="JavaScript"><i class="fab fa-js"></i></div>
+            <div class="skill-logo" data-name="React"><i class="fab fa-react"></i></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Graphic Design</h3>
+          <div class="skill-grid">
+            <div class="skill-logo" data-name="Canva"><i class="fas fa-palette"></i></div>
+            <div class="skill-logo" data-name="Photoshop"><i class="fas fa-image"></i></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Social Media</h3>
+          <div class="skill-grid">
+            <div class="skill-logo" data-name="Instagram"><i class="fab fa-instagram"></i></div>
+            <div class="skill-logo" data-name="TikTok"><i class="fab fa-tiktok"></i></div>
+            <div class="skill-logo" data-name="LinkedIn"><i class="fab fa-linkedin"></i></div>
+            <div class="skill-logo" data-name="Facebook"><i class="fab fa-facebook-f"></i></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>SEO & Analytics</h3>
+          <div class="skill-grid">
+            <div class="skill-logo" data-name="Google Analytics"><i class="fas fa-chart-bar"></i></div>
+            <div class="skill-logo" data-name="Search Console"><i class="fas fa-search-plus"></i></div>
+            <div class="skill-logo" data-name="SEMrush"><i class="fas fa-rocket"></i></div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Projects Section -->
-<section id="projects" class="hidden">
-    <h2 class="title">Recent Projects</h2>
-    <div class="projects">
-        <div class="project"><h3>📊 Viral Growth Campaign</h3><p>Instagram & TikTok engagement +250% via audience targeting & viral hooks.</p></div>
-        <div class="project"><h3>💻 Modern Business Landing Page</h3><p>Responsive high-conversion site with SEO & smooth animations.</p></div>
-        <div class="project"><h3>🔒 Security Assessment Lab</h3><p>Vulnerability scanning, Linux hardening on TryHackMe.</p></div>
+  <!-- Projects Section -->
+  <section id="projects" class="slide-left">
+    <div class="container">
+      <h2 class="title">Recent<span> Projects</span> </h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>📊 Viral Growth Campaign</h3>
+          <p>Instagram & TikTok engagement +250% via audience targeting & viral hooks.</p>
+          <div class="tech-stack">
+            <span>Meta Ads</span>
+            <span>Canva</span>
+            <span>Analytics</span>
+          </div>
+        </div>
+        <div class="project">
+          <h3>💻 Modern Business Landing Page</h3>
+          <p>Responsive high-conversion site with SEO & smooth animations.</p>
+          <div class="tech-stack">
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+            <span>SEO</span>
+          </div>
+        </div>
+        <div class="project">
+          <h3>🔒 Security Assessment Lab</h3>
+          <p>Vulnerability scanning, Linux hardening on TryHackMe.</p>
+          <div class="tech-stack">
+            <span>Linux</span>
+            <span>Nmap</span>
+            <span>OWASP</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button id="explore-projects-btn" class="btn">Explore More →</button>
+      </div>
     </div>
-    <div style="text-align:center; margin-top:25px;"><button id="explore-projects-btn" class="btn">Explore More →</button></div>
-</section>
+  </section>
 
-<!-- Services Section -->
-<section id="services" class="hidden">
-    <h2 class="title">What I Offer</h2>
-    <div class="services-grid">
+  <!-- Services Section -->
+  <section id="services" class="slide-right">
+    <div class="container">
+      <h2 class="title">What <span>I Offer</span></h2>
+      <div class="services-grid">
         <div class="service-box"><i class="fas fa-palette"></i><h3>Graphic Designing</h3><p>Visual identity, social graphics, Canva & Photoshop masterpieces.</p></div>
         <div class="service-box"><i class="fas fa-chart-line"></i><h3>Social Media Marketing</h3><p>Content strategy, growth hacking, community management.</p></div>
         <div class="service-box"><i class="fas fa-laptop-code"></i><h3>Web Development</h3><p>Modern responsive sites, performance-first frontend.</p></div>
         <div class="service-box"><i class="fas fa-bullhorn"></i><h3>Ads Campaigns</h3><p>Meta/Google Ads management, retargeting & ROAS optimization.</p></div>
         <div class="service-box"><i class="fas fa-search"></i><h3>Search Engine Optimization</h3><p>On-page SEO, technical audits, keyword strategies.</p></div>
         <div class="service-box"><i class="fas fa-tools"></i><h3>Site Maintenance</h3><p>Regular updates, speed optimization & security patches.</p></div>
+      </div>
+      <div class="text-center">
+        <button id="open-services-page" class="btn btn-outline">View All Services →</button>
+      </div>
     </div>
-    <div style="text-align:center;"><button id="open-services-page" class="btn btn-outline">View All Services →</button></div>
-</section>
+  </section>
 
-<!-- Contact Section (professional upgrade) -->
-<section id="contact" class="contact hidden" style="text-align:center;">
-    <h2 class="title" style="margin-bottom:20px;">Let's Connect</h2>
-    <p style="margin:20px 0; color:#CBD5F0;">Available for freelance & collaborations — Let's bring ideas to life</p>
-    <div class="contact-icons">
-        <a href="mailto:yamnafatima.tms@gmail.com" class="icon"><i class="fas fa-envelope"></i></a>
-        <a href="https://wa.me/923232106763" target="_blank" class="icon"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.instagram.com/anaya_zain.0" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="icon"><i class="fab fa-telegram-plane"></i></a>
-        <a href="https://www.linkedin.com/in/yamna-fatima-93529b36b" target="_blank" class="icon"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/yummyhere" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+  <!-- Contact Section with Form -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="title">Let's<span> Connect</span></h2>
+      <p>Available for freelance & collaborations — Let's bring ideas to life</p>
+      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="contact-icons">
+        <a href="mailto:yamnafatima.tms@gmail.com" class="circle-icon email"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/923232106763" target="_blank" class="circle-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/anaya_zain.0" target="_blank" class="circle-icon instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/yamna-fatima-93529b36b" target="_blank" class="circle-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/yummyhere" target="_blank" class="circle-icon github"><i class="fab fa-github"></i></a>
+      </div>
     </div>
-</section>
-<footer>© 2026 Yamna Fatima — Social Media Marketer & SEO Analyst. Crafted with precision.</footer>
-<script src="index.js"></script>
+  </section>
+
+  <footer>
+    <p>© 2026 Yamna Fatima — Social Media Marketer & SEO Analyst. Crafted with precision.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Modals -->
+  <div id="projectsModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>All Projects</h2>
+      <div class="projects-grid">
+        <div class="project"><h3>Viral Campaign</h3><p>250% Growth on Instagram/TikTok</p></div>
+        <div class="project"><h3>SEO Audit</h3><p>Ranked #1 for key terms</p></div>
+        <div class="project"><h3>Web Design</h3><p>Responsive Portfolio</p></div>
+        <div class="project"><h3>Meta Ads Strategy</h3><p>ROAS +300%</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="servicesModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Complete Services</h2>
+      <div class="services-grid">
+        <div class="service-box"><i class="fas fa-palette"></i><h3>Graphic Designing</h3><p>Canva, Photoshop, visual branding</p></div>
+        <div class="service-box"><i class="fas fa-chart-line"></i><h3>Social Media Marketing</h3><p>Organic growth, strategy, content calendars</p></div>
+        <div class="service-box"><i class="fas fa-laptop-code"></i><h3>Web Development</h3><p>HTML/CSS/JS, React, responsive sites</p></div>
+        <div class="service-box"><i class="fas fa-bullhorn"></i><h3>Ads Campaigns</h3><p>Meta & Google Ads, retargeting, A/B testing</p></div>
+        <div class="service-box"><i class="fas fa-search"></i><h3>Search Engine Optimization</h3><p>On-page, technical SEO, local SEO</p></div>
+        <div class="service-box"><i class="fas fa-tools"></i><h3>Site Maintenance</h3><p>Updates, security, speed optimization</p></div>
+      </div>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
